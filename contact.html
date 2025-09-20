@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namo SAU - Frontend Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 200px;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: #ffd700;
+        }
+
+        .nav-menu li a.active {
+            color: #ffd700;
+        }
+
+        .cta-button {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: black;
+        }
+
+         .cta-button.active {
+            color: #ffd700;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 70vh;
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-subtitle {
+            font-size: 24px;
+            color: #cccccc;
+            margin-bottom: 80px;
+        }
+
+        .contact-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contact-icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Email Icon */
+        .email-icon {
+            background: url('images/Profile\ Icon.png') center/cover no-repeat;
+        }
+
+        /* Location Icon */
+        .location-icon {
+            background: url('images/Group\ 510.png') center/100px 100px no-repeat;
+        }
+
+
+        /* Profile Icon */
+        .profile-icon {
+            background: url('images/Group\ 511.png') center/cover no-repeat;
+            position: relative;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            color: #cccccc;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Namo SAU</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button active">Let's talk</a>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <h1 class="page-title">Contact</h1>
+            
+            <div class="contact-section">
+                <h2 class="contact-title">Let's Connect</h2>
+                <p class="contact-subtitle">Don't be a stranger! Say hello and let's collaborate</p>
+                
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-icon email-icon"></div>
+                        <p class="contact-text">Namo@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon location-icon"></div>
+                        <p class="contact-text">Thailand, Bangkok</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon profile-icon"></div>
+                        <p class="contact-text">Namo SAU</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>

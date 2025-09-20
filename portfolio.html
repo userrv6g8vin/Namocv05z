@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namo SAU - Frontend Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 200px;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: #ffd700;
+        }
+
+        .nav-menu li a.active {
+            color: #ffd700;
+        }
+
+        .cta-button {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 60px;
+        }
+
+        /* Portfolio Items */
+        .portfolio-item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 60px;
+            margin-bottom: 80px;
+            min-height: 300px;
+        }
+
+        .portfolio-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        .project-image {
+            flex: 1;
+            background: #1a1a1a;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #333;
+        }
+
+        .project-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .project-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .project-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .view-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .view-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .git-code {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .git-code:hover {
+            color: white;
+        }
+
+        .git-icon {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Project Image Templates */
+        .bikes-project {
+            background: url('images/image2.png') center/100% 450px no-repeat;
+            position: relative;
+            height: 450px;
+        }
+
+        .learnify-project {
+            background: url('images/image3.png') center/100% 450px no-repeat;
+            position: relative;
+            height: 350px;
+        }
+
+        .anime-x-project {
+            background: url('images/image4.png') center/100% 400px no-repeat;
+            position: relative;
+            height: 400px;
+
+        }
+
+        .tech-z-project {
+            background: url('images/image5.png') center/100% 400px no-repeat;
+            position: relative;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Namo SAU</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Let's talk</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <h1 class="page-title">Portfolio</h1>
+            
+            <!-- Bikes and Boards Project -->
+            <div class="portfolio-item">
+                <div class="project-image bikes-project"></div>
+                <div class="project-content">
+                    <h2 class="project-title">Bikes and Boards</h2>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam odit labore ullam nemo omnis natus hic sit laudantium maiores! Expedita necessitatibus vitae aut mollitia tempore reiciendum molestias voluptate maiores quis reiciunt architecto? Incidunt iusto soluta tempore reiciunt architecto! Velit nesciunt architecto quis excepturi repellat libero in enim praesentium! Ex dicta est suscipit ipsam voluptate tempore voluptatum quam distinctio minus asperiores vitae ea, libero sed! Libero fugit non.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="view-btn">View</a>
+                        <a href="#" class="git-code">
+                            <svg class="git-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Git code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learnify Project -->
+            <div class="portfolio-item">
+                <div class="project-image learnify-project"></div>
+                <div class="project-content">
+                    <h2 class="project-title">Learnify</h2>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam odit labore ullam nemo omnis natus hic sit laudantium maiores! Expedita necessitatibus vitae aut mollitia tempore reiciendum molestias voluptate maiores quis reiciunt architecto? Incidunt iusto soluta tempore reiciunt architecto! Velit nesciunt architecto quis excepturi repellat libero in enim praesentium! Ex dicta est suscipit ipsam voluptate tempore voluptatum quam distinctio minus asperiores vitae ea, libero sed! Libero fugit non. Accusantium placerat dolorem minus eos excepturi modi Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugiat hic non.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="view-btn">View</a>
+                        <a href="#" class="git-code">
+                            <svg class="git-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Git code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anime-X Project -->
+            <div class="portfolio-item">
+                <div class="project-image anime-x-project"></div>
+                <div class="project-content">
+                    <h2 class="project-title">Anime-X</h2>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam odit labore ullam nemo omnis natus hic sit laudantium maiores! Expedita necessitatibus vitae aut mollitia tempore reiciendum molestias voluptate maiores quis reiciunt architecto? Incidunt iusto soluta tempore reiciunt architecto! Velit nesciunt architecto quis excepturi repellat libero in enim praesentium! Ex dicta est suscipit ipsam voluptate tempore voluptatum quam distinctio minus asperiores vitae ea, libero sed! Libero fugit non. Accusantium placerat dolorem minus eos excepturi modi Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="view-btn">View</a>
+                        <a href="#" class="git-code">
+                            <svg class="git-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Git code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech-Z Project -->
+            <div class="portfolio-item">
+                <div class="project-image tech-z-project"></div>
+                <div class="project-content">
+                    <h2 class="project-title">Tech-Z</h2>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam odit labore ullam nemo omnis natus hic sit laudantium maiores! Expedita necessitatibus vitae aut mollitia tempore reiciendum molestias voluptate maiores quis reiciunt architecto? Incidunt iusto soluta tempore reiciunt architecto! Velit nesciunt architecto quis excepturi repellat libero in enim praesentium! Ex dicta est suscipit ipsam voluptate tempore voluptatum quam distinctio minus asperiores vitae ea, libero sed! Libero fugit non. Accusantium placerat dolorem minus eos excepturi modi Lorem ipsum dolor sit amet consectetur adipisicing elit. labore fugiat hic autem deserunt asperiores vitae elit libero sed! Lorem fugit non.
+                    </p>
+                    <div class="project-buttons">
+                        <a href="#" class="view-btn">View</a>
+                        <a href="#" class="git-code">
+                            <svg class="git-icon" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Git code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>

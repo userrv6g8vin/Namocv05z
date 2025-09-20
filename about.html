@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namo  SAU - Frontend Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 200px;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            color: #ffd700;
+        }
+
+        .nav-menu li a.active {
+            color: #ffd700;
+        }
+
+        .cta-button {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            min-height: 70vh;
+            padding: 60px 0;
+            gap: 6px;
+        }
+
+        .content-left {
+            grid-column: 1/2;
+            max-width: 400px;
+        }
+
+        .content-right {
+            grid-column: 2/3;
+            max-width: 500px;
+        }
+
+        .content-bottom {
+            grid-column: 1 / 3;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .page-title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .about-intro {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .about-description {
+            font-size: 20px;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .download-cv {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .download-cv:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Abstract Shape */
+        .abstract-shape {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Namo SAU</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Let's talk</a>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="content-left">
+                <h1 class="page-title">About Me</h1>
+                
+                <div class="abstract-shape">
+                    <img src="images/loader_01.png" alt="loader_01">
+                </div>
+            </div>
+
+            <div class="content-right">
+                <p class="about-intro">
+                    Hi, I'm Namo SAU. A passionate Front-end Web Developer based in Thailand.
+                </p>
+                
+                <p class="about-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis eius modi voluptatibus quam illo ullam consectetur ex vitae, impedit odio et excepturi at perspiciatis vel nesciunt aperiam odit excepturi blanditiis ligero in enim praesentium! Ex dicta est suscipit ipsam voluptate tempore voluptatum quam distinctio minus asperiores vitae ea, libero saepe! Libero fugit non, placerat nulla quam odio asperiores ratione! Accusantium placeat dolorem minus eos excepturi modi.
+                </p>
+            </div>
+            <div class="content-bottom">
+                <a href="#" class="download-cv">Download CV</a>
+            </div>
+        </main>
+        
+    </div>
+</body>
+</html>
